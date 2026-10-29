@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f31111;
+    color: #e7e3e3;
+}
+
+/* Topo / Cabeçalho */
+header {
+    background-color: #f50606;
+    border-bottom: 2px solid #ccc;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-box {
+    background-color: #00071a;
+    color: rgb(233, 231, 231);
+    padding: 10px 15px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.1;
+}
+
+.logo-box .mn-sigla {
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+h1.titulo-site {
+    color: #070000;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+/* Banner de Imagem */
+.banner-imagens {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100px;
+}
+
+.banner-imagens img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition:cubic-bezier(0.3);
+}
+
+/* Layout Principal */
+.container-principal {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    gap: 30px;
+}
+
+/* Menu Lateral */
+aside.menu-lateral {
+    width: 220px;
+    flex-shrink: 0;
+}
+
+aside.menu-lateral ul {
+    list-style: none;
+}
+
+aside.menu-lateral li a {
+    display: block;
+    padding: 10px 0;
+    color: #111;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    transition: color 0.2s;
+}
+
+aside.menu-lateral li a::before {
+    content: "▶ ";
+    font-size: 10px;
+    color: #d8a706;
+}
+
+aside.menu-lateral li a:hover {
+    color: #b8aa2d;
+}
+
+.caixa-doe {
+    background-color: #0b1c4e;
+    color: rgb(241, 236, 236);
+    padding: 15px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.caixa-doe h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.caixa-doe p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.btn-doe {
+    display: block;
+    background-color: #f4f4f4;
+    color: #0d2358;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 6px;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+/* Grade de Conteúdo / Notícias */
+.conteudo-grid {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card-noticia {
+    background: white;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-noticia img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+}
+
+.card-corpo {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.card-corpo h4 {
+    font-size: 13px;
+    color: #0d2358;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.card-corpo p {
+    font-size: 11px;
+    color: #555;
+    line-height: 1.4;
+    text-align: center;
+}
+
+/* Divisor */
+.divisor {
+    max-width: 1200px;
+    margin: 40px auto 20px auto;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+/* Rodapé */
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 12px;
+    color: #333;
+}
+
+.footer-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer-coluna h5 {
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #111;
+    letter-spacing: 0.5px;
+}
+
+.footer-coluna p {
+    line-height: 1.5;
+    color: #444;
+}
+
+.footer-coluna a {
+    color: #0d2358;
+    text-decoration: none;
+}
+
+.redes-sociais {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.icones-redes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 8px;
+}
+
+.circulo-rede {
+    width: 25px;
+    height: 25px;
+    background-color: #222;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 11px;
+    color: #666;
+    margin-top: 20px;
+}
